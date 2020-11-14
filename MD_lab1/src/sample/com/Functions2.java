@@ -50,7 +50,6 @@ public class Functions2 {
                 Color color = new Color(dg.lakeimg.getRGB(wi,hi));
                 int val = color.getRed();
                 pixelsFromImage[hi][wi] = val;
-
             }
         }
 
@@ -67,9 +66,7 @@ public class Functions2 {
                         sumPixelNew += pixelsFromImage[hi + y][wi + x] * tab[val];
                         val ++;
                     }
-
                 }
-
 
                 if(sumArr != 0)
                     r = sumPixelNew/sumArr;
@@ -103,7 +100,7 @@ public class Functions2 {
     }
 
 
-    public void filtrGauss() {
+   public void filtrGauss() {
 
         int[] arrGauss = {1,4,1,4,32,4,1,4,1};
         filtr(arrGauss);
